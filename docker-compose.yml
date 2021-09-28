@@ -1,0 +1,10 @@
+bot:
+  build: .
+  restart: always
+  env_file:
+    - ./.env
+  volumes:
+    - ${PWD}/node_modules:/bot/node_modules
+    - ${PWD}/config.toml:/bot/config.toml
+    - ${PWD}/data:/bot/data/
+    - ${PWD}/tmp:/bot/tmp/

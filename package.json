@@ -1,0 +1,30 @@
+{
+  "name": "cake-discord-boilerplate",
+  "version": "2.0.0",
+  "description": "Simple boilerplate for a discord bot",
+  "main": "main.js",
+  "scripts": {
+    "build": "rm -rf ./dist && npx tsc",
+    "start": "node dist/main.js --enable-source-maps",
+    "go": "npm run build && npm start",
+    "docker:rebuild": "docker-compose up -d --build",
+    "docker:start": "docker-compose up -d",
+    "docker:stop": "docker-compose kill && docker-compose rm -f"
+  },
+  "author": "Meshiest",
+  "license": "ISC",
+  "dependencies": {
+    "@types/lokijs": "^1.5.7",
+    "@types/node": "^16.10.1",
+    "bufferutil": "^4.0.4",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "lokijs": "^1.5.12",
+    "node-html-parser": "^2.0.0",
+    "source-map-support": "^0.5.20",
+    "toml": "^3.0.0",
+    "typescript": "^4.4.3",
+    "utf-8-validate": "^5.0.6",
+    "zlib-sync": "^0.1.7"
+  }
+}

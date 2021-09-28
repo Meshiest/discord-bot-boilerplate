@@ -1,0 +1,9 @@
+config.toml
+node_modules/
+package-lock.json
+dist/
+.env
+.vscode/settings.json
+tmp/*
+src/features/*
+bot.db
